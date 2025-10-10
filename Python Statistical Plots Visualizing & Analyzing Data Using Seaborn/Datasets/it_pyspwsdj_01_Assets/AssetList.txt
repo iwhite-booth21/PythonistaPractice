@@ -1,0 +1,15 @@
+it_pyspwsdj_01_enus_02		Installing the Seaborn Module
+it_pyspwsdj_01_enus_03		Visualizing Univariate Data
+it_pyspwsdj_01_enus_04		Representing Data Using Histograms
+it_pyspwsdj_01_enus_05		Creating KDE Curves
+it_pyspwsdj_01_enus_06		Creating Univariate Plots
+it_pyspwsdj_01_enus_07		Representing Data Using Bivariate Visualizations
+it_pyspwsdj_01_enus_08		Creating KDE Curves and Cumulative Distributions
+it_pyspwsdj_01_enus_09		Visualizing Data Using Bivariate Histograms
+it_pyspwsdj_01_enus_10		Understanding and Implementing Joint Plots
+it_pyspwsdj_01_enus_11		Understanding and Implementing Scatter Plots
+it_pyspwsdj_01_enus_12		Customizing Scatter Plots with Multiple Variables
+it_pyspwsdj_01_enus_13		Creating Box Plots
+it_pyspwsdj_01_enus_14		Understanding and Implementing Boxen Plots in Seaborn
+it_pyspwsdj_01_enus_15		Representing Data Using Violin Plots
+it_pyspwsdj_01_enus_16		Customizing Custom Violin Plots
