@@ -1,0 +1,280 @@
+Question: Which of these options best describes logistic regression? Instruction: 
+Choose all options that best answer the question. 
+A.Answer A. 
+Estimates value of Y given value of X 
+B.Answer B. 
+A classification algorithm that fits an S-curve to X,Y data 
+C.Answer C. 
+Estimates probability of Y given value of X 
+D.Answer D. 
+A regression algorithm that fits a straight line to X,Y data:
+
+The correct choices are:
+
+✅ B. A classification algorithm that fits an S-curve to X,Y data
+✅ C. Estimates probability of Y given value of X
+
+Why:
+
+Logistic regression is mainly used for classification, not predicting continuous values.
+
+It uses a sigmoid (S-shaped) function to map inputs to a value between 0 and 1.
+
+That output is interpreted as the probability of a class (e.g., probability that 
+Y=1 given 𝑋).
+--------------------------------------------------------------------------------------------------------------------------
+Question: You would like to create a heatmap which visualizes the correlations between columns in a dataframe. 
+You would like the correlation coefficient to appear in each cell of the heatmap. How would you parameterize your invocation of sns.heatmap?
+Instruction: Choose the option that best answers the question. 
+
+A.Answer A.
+sns.heatmap(annotation = True,…)
+
+B.Answer B.
+sns.heatmap(print = True,…)
+
+C.Answer C.
+sns.heatmap(corr = True,…)
+
+D.Answer D.
+sns.heatmap(annot = True,…)
+
+The correct choices are:
+✅ D. sns.heatmap(annot = True, …)
+
+Explanation:
+
+The annot parameter controls whether the numeric values (like correlation coefficients) are displayed inside each cell of the heatmap.
+
+Setting annot=True tells Seaborn to write the values directly onto the plot.
+--------------------------------------------------------------------------------------------------------------------------
+Question: By default, a Seaborn Pairplot consists of:
+Instruction: Choose the option that best answers the question. 
+
+A.Answer A.
+Histograms along the diagonal, and scatter plots for off-diagonal elements
+
+B.Answer B.
+A heatmap representing the correlation matrix of the data
+
+C.Answer C.
+Univariate histograms along the diagonal, and bivariate histograms for off-diagonal elements
+
+D.Answer D.
+KDE curves along the diagonal, and scatter plots for off-diagonal elements
+
+✅ A. Histograms along the diagonal, and scatter plots for off-diagonal elements
+
+Explanation:
+
+By default, sns.pairplot() uses histograms on the diagonal to show the distribution of each variable.
+
+The off-diagonal plots are scatter plots showing pairwise relationships between variables.
+--------------------------------------------------------------------------------------------------------------------------
+Question: You would like to create a Pairplot with the regression plots for the off-diagonal entries. How would you parameterize your call to the sns.pairplot() function?
+Instruction: Choose the option that best answers the question. 
+
+A.Answer A.
+sns.pairplot(kind = ‘reg’,…)
+
+B.Answer B.
+sns.pairplot(type = ‘regress’,…)
+
+C.Answer C.
+sns.pairplot(type = ‘reg’,…)
+
+D.Answer D.
+sns.pairplot(kind = ‘lmplot’,…)
+
+✅ A. sns.pairplot(kind = 'reg', …)
+
+Explanation:
+
+The kind parameter controls the type of plot used for the off-diagonal entries.
+
+Setting kind='reg' creates regression plots (scatter plots with a fitted regression line).
+--------------------------------------------------------------------------------------------------------------------------
+Question: If you want to create a regression plot with multiple regression lines based on a categorical variable in your data, how would you parameterize your call to the sns.lmplot() function?
+Instruction: Choose all options that best answer the question. 
+
+A.Answer A.
+Using the “color” input argument set to True to the sns.lmplot() function
+
+B.Answer B.
+Using the “hue” input argument set to True to the sns.lmplot() function
+
+C.Answer C.
+Using the “extra_col” input argument set to True to the sns.lmplot() function
+
+D.Answer D.
+Using the “col” and “row” input arguments set to True to the sns.lmplot() function
+
+✅ A. Using the “color” input argument set to True to the sns.lmplot() function
+✅ B. Using the “hue” input argument set to True to the sns.lmplot() function
+✅ C. Using the “extra_col” input argument set to True to the sns.lmplot() function
+
+Explanation:
+
+hue is specifically designed to handle categorical variables and will draw multiple regression lines on the same plot, one for each category.
+
+This is the standard and intended way to compare regression relationships across groups in Seaborn.
+--------------------------------------------------------------------------------------------------------------------------
+Question: If you want to create multiple axis level plots which share the same x axis, how would you parameterize your call to plt.subplots()?
+Instruction: Choose the option that best answers the question. 
+
+A.Answer A.
+Using the “universal_x” input argument to the plt.subplots() function
+
+B.Answer B.
+Using the “share_x” input argument to the plt.subplots() function
+
+C.Answer C.
+Using the “unix” input argument to the plt.subplots() function
+
+D.Answer D.
+Using the “sharex” input argument to the plt.subplots() function
+
+✅ D. Using the sharex input argument to the plt.subplots() function
+
+Explanation:
+
+plt.subplots() can create multiple axes (subplots) in one figure.
+To make all subplots share the same x-axis, you use the sharex parameter:
+
+    fig, axes = plt.subplots(nrows=3, ncols=1, sharex=True)
+
+This ensures that zooming, limits, and ticks on the x-axis are shared across all subplots.
+--------------------------------------------------------------------------------------------------------------------------
+Question: If you want to create a regression plot without the regression line how would you parameterize your call to the sns.regplot() function?
+Instruction: Choose the option that best answers the question. 
+
+A.Answer A.
+Using the “fit_reg” input argument set to False to the sns.regplot() function
+
+B.Answer B.
+Using the “line” input argument set to False to the sns.regplot() function
+
+C.Answer C.
+Using the “show_line” input argument set to False to the sns.regplot() function
+
+D.Answer D.
+Using the “reg_line” input argument set to False to the sns.regplot() function
+
+✅ A. Using the fit_reg input argument set to False to the sns.regplot() function
+
+Explanation:
+
+sns.regplot() by default draws a scatter plot + regression line.
+To remove the regression line and keep only the scatter points, set:
+    sns.regplot(x='x', y='y', data=df, fit_reg=False)
+fit_reg=False disables the regression line, but keeps the scatter plot.
+--------------------------------------------------------------------------------------------------------------------------
+Question: Assume you have a DataFrame stored in the variable df which has dates for every day in a year and stock close prices:
+ 
+new_df = df[“Close”].resample('M').mean()
+ 
+What does the line of code above do?
+Instruction: Choose the option that best answers the question. 
+
+A.Answer A.
+It converts the close prices to be the average for each year
+
+B.Answer B.
+It converts the close prices to be the average for each week
+
+C.Answer C.
+It checks whether the dates in the DataFrame are by year
+
+D.Answer D.
+It checks whether the dates in the DataFrame are by month
+
+E.Answer E.
+It converts the close prices to be the average for each month
+
+✅ E. It converts the close prices to be the average for each month
+
+Explanation:
+    new_df = df["Close"].resample('M').mean()
+resample('M') → groups the data by calendar month.
+.mean() → calculates the average of the “Close” prices for each month.
+The result is a monthly average of daily close prices.
+--------------------------------------------------------------------------------------------------------------------------
+Question: What does the error band of a line convey by default in Seaborn?
+Instruction: Choose the option that best answers the question. 
+
+A.Answer A.
+The error bands convey the 95th percentile of the confidence interval in that category
+
+B.Answer B.
+The error bands convey whether there are null values in the data in that category
+
+C.Answer C.
+The error bands convey whether there are duplicates in the data in that category
+
+D.Answer D.
+The error bands convey whether there are outliers in the data in that category
+
+✅ A. The error bands convey the 95th percentile of the confidence interval in that category
+
+Explanation:
+In Seaborn, functions like sns.lineplot() or sns.lmplot() show shaded error bands around the line by default.
+These bands represent the 95% confidence interval of the estimate at each point, giving a visual sense of uncertainty in the line.
+They do not indicate nulls, duplicates, or outliers—only the confidence interval.
+--------------------------------------------------------------------------------------------------------------------------
+Question: What is the difference between a strip plot and a swarm plot?
+Instruction: Choose the option that best answers the question. 
+
+A.Answer A.
+The X and Y axes of a swarm plot are always continuous, while a strip plot always has a categorical X axis and a continuous Y axis
+
+B.Answer B.
+The swarm plot creates individual graphs for every category on the X axis, while the strip plot creates a single graph
+
+C.Answer C.
+The swarm plot visualizes univariate data using data bars, while the strip plot visualizes data using points
+
+D.Answer D.
+The swarm plot applies noise called jitter to the chart so that the no data points overlap, while a strip plot allows overlapping data
+
+✅ D. The swarm plot applies noise called jitter to the chart so that no data points overlap, while a strip plot allows overlapping data
+
+Explanation:
+Both strip plots and swarm plots are used to visualize categorical vs. continuous data.
+Strip plot: places points along a categorical axis, but points can overlap if many have the same value.
+Swarm plot: automatically adjusts points so that they don’t overlap, creating a “beeswarm” effect.
+    sns.stripplot(x='Category', y='Value', data=df)   # points may overlap
+    sns.swarmplot(x='Category', y='Value', data=df)   # points don’t overlap
+--------------------------------------------------------------------------------------------------------------------------
+Question: Which of these statements are true about a strip plot?
+Instruction: Choose all options that best answer the question. 
+
+A.Answer A.
+A strip plot visualizes data using data points
+
+B.Answer B.
+The X and Y axes of a strip plot are both bucketed
+
+C.Answer C.
+The X axis of a strip plot is always categorical
+
+D.Answer D.
+A strip plot visualizes data using bars
+
+E.Answer E.
+The Y axis of a strip plot is always continuous
+
+The correct answers are:
+
+✅ A. A strip plot visualizes data using data points
+✅ C. The X axis of a strip plot is always categorical
+✅ E. The Y axis of a strip plot is always continuous
+
+Explanation:
+Strip plot is used to show the distribution of a continuous variable across categories.
+It plots individual points, not bars.
+    By design:
+        X axis: categorical
+        Y axis: continuous
+
+sns.stripplot(x='Category', y='Value', data=df)
+--------------------------------------------------------------------------------------------------------------------------
