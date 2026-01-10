@@ -1,0 +1,143 @@
+Question: Which statement best defines a wide form dataset?
+Result: Correct. Great job! 
+What you selected
+How you did
+A.Answer A.
+A wide form data set is a data set with more columns than rows in the entire data set
+You didn't select this answer.
+
+You got it right.
+B.Answer B.
+A wide form dataset has one row per independent variable, with metadata recorded in the row and column labels
+You selected this answer.
+
+You got it right.
+C.Answer C.
+A wide form data set is a data set with more than ten columns and less than a hundred rows
+You didn't select this answer.
+
+You got it right.
+D.Answer D.
+A wide form dataset has one row per observation, with metadata recorded within the table as values
+You didn't select this answer.
+
+You got it right.
+B.Answer B.
+A wide form dataset has one row per independent variable, with metadata recorded in the row and column labels
+You selected this answer.
+-----------------------------------------------------------------------------------------------------------------
+Question: Which statements can be used to create a brush which selects a range on the X axis in a chart?
+Instruction: Choose the option that best answers the question. 
+
+A.Answer A.
+alt.brush()
+
+B.Answer B.
+alt.selection_interval(encodings = x)
+
+C.Answer C.
+alt.selection_interval(axis = x)
+
+D.Answer D.
+alt.brush(axis = x)
+
+
+B.Answer B.
+alt.selection_interval(encodings = x)
+-----------------------------------------------------------------------------------------------------------------------
+Question: Which interactivity feature is available by default in an Altair bar chart?
+Result: Correct. Great job! 
+What you selected
+How you did
+A.Answer A.
+Zoom in
+You didn't select this answer.
+
+You got it right.
+B.Answer B.
+Save as SVG
+You selected this answer.
+
+You got it right.
+C.Answer C.
+Pan
+You didn't select this answer.
+
+You got it right.
+D.Answer D.
+Zoom out
+You didn't select this answer.
+
+You got it right.
+E.Answer E.
+Save as PNG
+You didn't select this answer.
+---------------------------------------------------------------------------------------------------------------------------------
+Question: How would you parameterize a call to the alt.X() constructor to specify the number of bins in a histogram?
+Result: Correct. Great job! 
+What you selected
+How you did
+A.Answer A.
+Using the “bins” input argument to the alt.X() function
+You didn't select this answer.
+
+You got it right.
+B.Answer B.
+Using the “num_bins” input argument to the alt.X() function
+You didn't select this answer.
+
+You got it right.
+C.Answer C.
+Using the “bin” input argument to the alt.X() function
+You selected this answer.
+
+You got it right.
+D.Answer D.
+Using the “binning” input argument to the alt.X() function
+You didn't select this answer.
+---------------------------------------------------------------------------------------------------------------------------------
+Question: Which error will be thrown if you attempt to visualize a dataset with more than 5000 rows by default?
+Result: Correct. Great job! 
+What you selected
+How you did
+A.Answer A.
+MaxRowsError
+You selected this answer.
+
+You got it right.
+B.Answer B.
+No error will be thrown at all, the code will work fine
+You didn't select this answer.
+
+You got it right.
+C.Answer C.
+ExceedsLimitationError
+You didn't select this answer.
+
+You got it right.
+D.Answer D.
+IntegrityError
+---------------------------------------------------------------------------------------------------------------------------------
+Question: Which commands can be used to install Altair, Vega, and Vega Lite from a Jupyter notebook?
+Result: Correct. Great job! 
+What you selected
+How you did
+A.Answer A.
+!install altair, vega, vega_datasets
+You didn't select this answer.
+
+You got it right.
+B.Answer B.
+install altair, vega, vega_datasets
+You didn't select this answer.
+
+You got it right.
+C.Answer C.
+!pip install altair vega vega_datasets
+You selected this answer.
+
+You got it right.
+D.Answer D.
+python install altair, vega, vega_datasets
+You didn't select this answer.
+
