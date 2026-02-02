@@ -1,0 +1,33 @@
+Question: How would you parameterize a call to the alt.chart().mark_boxplot().encode() property to specify the color in a box plot?
+    Use the color input argument in alt.Chart().mark_boxplot().encode(color=...) to specify the color.
+
+Question: Which function from the alt.Chart() class can be used to create a violin plot?
+    In Altair, violin plots are created by combining a density transform with alt.Chart().mark_area() (there is no built-in mark_violin() function).
+
+Question: You would like to add a dark-green line to an area chart. How would you parameterize your call to the alt.Chart().mark_area() method?
+    You add a dark-green line to an area chart by passing a line dictionary, e.g.
+alt.Chart().mark_area(line={"color": "darkgreen"}, …)
+
+Question: Which are valid inputs to the “sort” parameter to the alt.X() constructor?
+    In Altair, the sort parameter can take an encoding channel like "y" (ascending by y) or "-y" (descending by y). The others are not valid sort values.
+
+Question: Which function from the alt.Chart() class can be used to create a scatter plot with hollow points?
+    alt.Chart().mark_hollow_scatter()
+
+Question: Which statement accurately describes a trellis area chart?
+    A trellis area chart is an area chart with a separate chart for every category (i.e., small multiples/faceting).
+
+Question: You would like to create a line chart with step interpolation. How would you parameterize your call to the alt.Chart().mark_line() method?
+    To create a step line chart in Altair, you pass interpolate="step" to mark_line().
+
+Question: Which Altair classe can be used to add conditional formatting to a chart?
+    Altair uses alt.condition() to apply conditional formatting in chart encodings.
+
+Question: You would like to create a brush which selects a range of data points in a scatter plot. How would you parameterize your call to the alt.selection() function?
+    To create a brush (interval) selection, you parameterize the call as alt.selection(type="interval", …)  
+
+Question: Assume you have two line charts stored in variables called line_01 and line_02. Which statement can be used to return both of these lines in the same chart?
+    To display multiple charts on the same axes, you use layering in Altair:
+
+Question: What kind of variables can be placed on the X and Y axis of a scatter plot?
+    In a scatter plot, both the X and Y axes must be continuous variables because each point represents a pair of numeric values.
