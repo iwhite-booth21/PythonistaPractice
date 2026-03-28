@@ -141,3 +141,40 @@ D.Answer D.
 python install altair, vega, vega_datasets
 You didn't select this answer.
 
+
+--------------------------------------------------------------------------------------------------------------------------------------
+-- SPECIALIZED GRAPHS
+--------------------------------------------------------------------------------------------------------------------------------------
+1. Which statement can be used to create a brush which selects a single point in a scatter chart?
+Functions: alt.brush() and alt.selection_single()
+---------------------------------------------------------------------------------------------------------------------------------
+2. How would you parameterize your call to the alt.Chart().mark_bar() method so that the width of the bars in a bar chart also correspond to a variable?
+Functions/Arguments: width or bar_width
+---------------------------------------------------------------------------------------------------------------------------------
+3. Which classe can be used to perform a sort operation on a variable in a dash chart?
+Class: alt.SortField
+---------------------------------------------------------------------------------------------------------------------------------
+4. Which of the following best defines a ranged dot plot?
+Description: A dot plot with two or more dots representing a range of values which are connected by a line
+---------------------------------------------------------------------------------------------------------------------------------
+5. You would like to create a green colored map. How would you parameterize your call to the alt.Chart().mark_geoshape() method?
+Parameters: format={"color":"green"} or hue="green"
+---------------------------------------------------------------------------------------------------------------------------------
+6. Which function from the alt.Chart() class can be used to create a heat map?
+Function: alt.Chart().mark_rect()
+---------------------------------------------------------------------------------------------------------------------------------
+7. You would like to create a y axis on the right side of a chart. How would you parameterize your call to the alt.Axis() constructor?
+Parameter: orientation="right"
+---------------------------------------------------------------------------------------------------------------------------------
+8. Which statements about a default representation of a strip plot in Altair is true?
+Axes: One axis continuous, one axis categorical
+---------------------------------------------------------------------------------------------------------------------------------
+9. You want to create a color scale in a variable “color_scale” with colors for the categories “X”, “Y”, “Z” for use in a chart. Which statement can be used to achieve this?
+Statement: color_scale = alt.Scale(domain=["X","Y","Z"])
+---------------------------------------------------------------------------------------------------------------------------------
+10. Which classes are required to create a candlestick chart in Altair?
+Classes: alt.Y, alt.Y2, alt.Chart
+---------------------------------------------------------------------------------------------------------------------------------
+11. How would you parameterize your call to the alt.Chart().transform_aggregate() method to create a plot with one marker for each category of a column?
+Argument: groupby
+
