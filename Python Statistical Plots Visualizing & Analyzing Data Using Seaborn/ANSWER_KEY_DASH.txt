@@ -1,0 +1,252 @@
+==================================================
+Dash, Plotly, and Pandas Study Guide
+==================================================
+
+1. Pandas DataFrame Definition
+--------------------------------
+Question:
+Which of the following best defines a Pandas DataFrame?
+
+Correct Answer:
+D. A Pandas DataFrame is a tabular representation of data using rows and columns.
+
+Key Concept:
+- A DataFrame is a two-dimensional labeled data structure.
+- It is similar to a spreadsheet or SQL table.
+- Data is organized into rows and columns.
+- It can contain different data types in different columns.
+
+
+==================================================
+
+2. Dash Callback Definition
+--------------------------------
+Question:
+Which of the following is an accurate description of a callback?
+
+Correct Answer:
+B. A way to automatically execute an operation whenever the user interacts with the app.
+
+Key Concept:
+- A callback is a function triggered by user interactions.
+- Examples:
+  - Clicking a button
+  - Selecting a dropdown option
+  - Entering text
+- Callbacks update components in a Dash application.
+
+
+==================================================
+
+3. Box Select vs Lasso Select
+--------------------------------
+Question:
+What is the difference between a box select and a lasso select?
+
+Correct Answer:
+C. A box select can only select a rectangle of rows while a lasso select can select rows in any shape.
+
+Key Concept:
+Box Select:
+- Selects data points inside a rectangular area.
+
+Lasso Select:
+- Allows free-form selection of data points.
+- Can select points in any shape.
+
+
+==================================================
+
+4. Default Dash Chart Interactivity Tools
+--------------------------------
+Question:
+Which are the default interactivity tools available in a Dash chart?
+
+Correct Answers:
+A. Panning
+C. Zooming In
+E. Zooming Out
+
+Key Concept:
+Default Plotly/Dash chart tools include:
+- Pan
+- Zoom In
+- Zoom Out
+
+Not default:
+- Text box updates
+- Range sliders (must be added manually)
+
+
+==================================================
+
+5. Creating a Grouped Bar Chart
+--------------------------------
+Question:
+How would you parameterize px.bar() to create a grouped bar chart?
+
+Correct Answer:
+B. px.bar(..., barmode="group")
+
+Key Concept:
+- Plotly Express uses the barmode parameter.
+- Grouped bar charts use:
+
+    barmode="group"
+
+Other modes:
+- barmode="stack" creates stacked bars.
+
+
+==================================================
+
+6. Defining a Dash Callback Function
+--------------------------------
+Question:
+Which decorator is required to define a callback function?
+
+Correct Answer:
+D. app.callback()
+
+Example:
+
+@app.callback(
+    Output("output", "children"),
+    Input("button", "n_clicks")
+)
+
+Key Concept:
+- The callback decorator connects inputs and outputs.
+- It tells Dash when to execute a function.
+
+
+==================================================
+
+7. Dash HTML Components
+--------------------------------
+Question:
+Which Dash extension has wrappers corresponding to HTML tags?
+
+Correct Answer:
+B. dash_html_components
+
+Key Concept:
+dash_html_components provides Python versions of HTML elements.
+
+Examples:
+- html.Div()
+- html.H1()
+- html.Button()
+
+Modern Dash syntax:
+from dash import html
+
+
+==================================================
+
+8. Libraries Used for Visualization in Dash
+--------------------------------
+Question:
+Which libraries can be used to visualize data in a Dash app?
+
+Correct Answers:
+B. plotly.express
+D. plotly.graph_objects
+
+Key Concept:
+
+plotly.express:
+- High-level chart creation.
+- Easy to use.
+- Good for common charts.
+
+plotly.graph_objects:
+- Lower-level API.
+- Allows detailed customization.
+
+
+==================================================
+
+9. Dash hoverData Property
+--------------------------------
+Question:
+Which fields are present by default in hoverData?
+
+Correct Answers:
+A. X axis value
+D. Y axis value
+
+Key Concept:
+hoverData contains information about the point being hovered over.
+
+Common values:
+- x value
+- y value
+
+Other information may appear only if added:
+- Marker size
+- Custom data
+- Dates
+
+
+==================================================
+
+10. Custom Tooltip in px.scatter()
+--------------------------------
+Question:
+How do you add a custom tooltip to a scatter chart?
+
+Correct Answer:
+C. px.scatter(..., hover_data=[columns])
+
+Example:
+
+px.scatter(
+    df,
+    x="column1",
+    y="column2",
+    hover_data=["column3"]
+)
+
+Key Concept:
+- hover_data controls extra information shown when hovering over points.
+- It allows additional columns to appear in tooltips.
+
+
+==================================================
+Quick Answer Review
+==================================================
+
+1. Pandas DataFrame:
+   D - Rows and columns
+
+2. Dash Callback:
+   B - Runs when user interacts with app
+
+3. Box vs Lasso Select:
+   C - Box is rectangular, lasso is any shape
+
+4. Default Dash Tools:
+   A, C, E - Panning, Zooming In, Zooming Out
+
+5. Grouped Bar Chart:
+   B - barmode="group"
+
+6. Callback Decorator:
+   D - app.callback()
+
+7. HTML Components:
+   B - dash_html_components
+
+8. Visualization Libraries:
+   B, D - plotly.express and plotly.graph_objects
+
+9. hoverData:
+   A, D - X and Y axis values
+
+10. Custom Tooltip:
+   C - hover_data=[columns]
+
+==================================================
+END OF STUDY GUIDE
+==================================================
